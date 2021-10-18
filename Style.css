@@ -1,0 +1,120 @@
+body{
+
+    /* margin-left: 20%; margin-right: 20%; background: linear-gradient(135deg,  #43cea2  0%,#185a9d 100%) */
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color:whitesmoke;
+}
+
+.A{
+
+    background-color:transparent; height: 50px; width:100%;
+}
+
+#a{
+    color:#FF4500;
+}
+
+.B{
+    background-color:transparent; height: 100px; width:100%;
+}
+
+.C
+{
+    background-color:transparent; height: 100px; width:30%; float: left;
+
+}
+
+.D{
+    color:#00CFDE;
+}
+
+.E{
+    background-color:transparent; height: 100px; width:70%; float: left;
+}
+
+.F{
+    height:100px; width:100px; float:left;
+
+}
+.G{
+    color: #30ce88;
+}
+
+#b{
+color: #FF0000;
+}
+
+.I{
+    color: #006600;
+}
+
+#c{
+    color: #ff5f6d;
+    
+    }
+
+    #im {
+        height: 600px;
+        width: 900px;   
+    }
+
+    #im3 {
+        height: 100px;
+        width: 100px;
+
+        position: relative;
+
+        top: 200px;
+        left: 400px;
+    }
+
+
+    #container {
+
+        display: flex;
+    }
+
+
+    #bottom {
+        display: none;
+    }
+
+    #b2 {
+        display: none;
+    }
+
+    #hsc {
+
+        display: none;
+
+    }
+
+    #ssc {
+
+        display: none;
+
+    }
+
+    #ug {
+
+        display: none;
+
+    }
+
+    #pg {
+
+        display: none;
+
+    }
+
+    td,
+    th {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #des {
+        color: #30ce88;
+    }

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TaskResumeMakerDesignByAnkush</title>
+    <link rel="stylesheet" href="Style.CSS">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<Script>
+
+    $('document').ready(function () {
+        $("#imgload").change(function () {
+            if (this.files && this.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imgshow').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(this.files[0]);
+            }
+        });
+    });
+</Script>
+
+
+<body>
+
+    <div id="container">
+
+
+
+        <div id="right">
+            <!-- right div start-->
+
+
+            <form action="#" id="frm">
+
+                <table>
+
+                    <tr>
+                        <td> NAME</td>
+                        <td><input type="text" name="" placeholder="please enter name" id="i1" /> <br> </td>
+                    </tr>
+
+                    <tr>
+                        <td>MOBILE NUMBER </td>
+                        <td><input type="text" placeholder="please mobile number" id="i2" /> </td>
+
+                    </tr>
+
+
+
+
+                    <tr>
+                        <td> EMAIL ADDRESS</td>
+                        <td> <input type="text" placeholder="please enter email address" id="i3" /> </td>
+
+                    </tr>
+
+
+
+                    <tr>
+                        <td>Your Photo </td>
+                        <td> <input type="file" id="imgload"></td>
+                    </tr>
+
+                    <tr>
+                        <td>DOB </td>
+                        <td> <input type="date" placeholder="please enter dob " id="i4" /> </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>STRENGTH </td>
+                        <td> <input type="text" placeholder="please enter your strength" id="i5" /> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>WEEKNESS </td>
+                        <td><input type="text" placeholder="please enter your weekness" id="i6" /> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>FAVOURIT HOBBIES </td>
+                        <td> <input type="text" placeholder="please enter your favorite hobbies" id="i7" />
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td>home address </td>
+                        <td> <input type="text" placeholder="please enter your home addresss" id="i8" />
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td>Languages</td>
+                        <td> <input type="text" placeholder="please enter your langauges" id="i13" /> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Education</td>
+                        <td> HSC <input type="radio" name="r" id="1" onclick="show(1)" /></td>
+                        <td> SSC <input type="radio" name="r" id="2" onclick="show(2)" /> </td>
+                        <td> UG <input type="radio" name="r" id="3" onclick="show(3)" /> </td>
+                        <td> PG <input type="radio" name="r" id="4" onclick="show(4)" /></td>
+                        <td> NONE <input type="radio" name="r" id="5" onclick="show(5)" /></td>
+
+                    </tr>
+
+
+
+                </table>
+
+
+
+                <div id="hsc">
+
+                    Enter HSC Details <input type="text" placeholder="please enter HSC details " id="i9"
+                        onclick="show()" />
+
+                </div>
+
+
+                <div id="ssc">
+
+                    Enter SSC Details <input type="text" placeholder="please enter SSC details " id="i10"
+                        onclick="show()" />
+
+                </div>
+
+
+
+
+
+                <div id="ug">
+
+                    Enter UG Details <input type="text" placeholder="please enter UG details" id="i11"
+                        onclick="show()" />
+
+                </div>
+
+                <div id="pg">
+
+                    Enter PG Details <input type="text" placeholder="please enter PG details" id="i12"
+                        onclick="show()" />
+
+                </div>
+
+            </form>
+
+            <Center> <button onclick="show1()" id="b1">Show </button> </Center>
+
+
+
+
+        </div> <!-- right div end-->
+
+
+        <div id="left">
+
+            <h2 id="des">Resume Maker Designed By Ankush</h2>
+
+            <img src="resume.png" id="im" />
+
+            <div>
+
+
+
+                <div>
+
+
+
+                    <div id="bottom">
+                        <!-- bottom div start-->
+
+                        <div class="A">
+                            <h1 align="center" id="a"> CURRICULUM </h1>
+                        </div>
+                        <hr>
+                        <div class="B">
+                            <div Class="C">
+                                <p align="left" class="D">Mobile:-<span id="mb"></span></p>
+                                <p align="left" class="D">Email:-<span id="em"></span></p>
+                                <p align="left" class="D">Address:-<span id="add"></span></p>
+                            </div>
+
+                            <div Class="E">
+                                <img src="#" id="imgshow" align="left" height="100" width="100">
+                                <h1 align="right" class="D"><span id="nm"></span></h1>
+                                <h4 align="right" class="D">Full Stack Java Developer</h4>
+                            </div>
+                        </div>
+
+                        </header>
+                        <hr>
+                        <b Class="G">SUMMARY</b>
+                        <hr>
+                        <p>
+                            Full stack java developer with
+                            Strong problem solving and coding skills.
+                            Excellent communication skills.
+                            Extensive experience with Spring Framework.
+                            Experience with JavaScript, CSS and HTML.
+                            Experience with test driven development.
+                        </p>
+                        <b Class="G">KEY SKILLS</b>
+                        <hr>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>Jquery</li>
+                            <li>Bootstrap</li>
+                            <li>React</li>
+                            <li> Git and GitHub </li>
+                            <li> Backend: java</li>
+                            <li> Web architecture </li>
+                            <li> HTTP and REST</li>
+                            <li> Database storage</li>
+                            <li> Basic design skills</li>
+                            <li>Npm</li>
+                            <li>Soft skills</li>
+                        </ul>
+                        <b Class="G">INTERNSHIP</b>
+                        <hr>
+                        <p>Worked as a Full Stack Java Devloper in Porgrammer Points.</p>
+                        <BR>
+
+                        <b Class="G">EDUCATION</b>
+                        <hr>
+                        <ul type="circle">
+
+                            <li>HSC:-<span id="hs"></span></li>
+                            <li>SSC:- <span id="ss"></span> </li>
+                            <li>UG :- <span id="u"></span></li>
+                            <li>PG :-<span id="p"></span> </li>
+
+                        </ul>
+                        <br>
+                        <b Class="G">ADDITIONAL INFORMATION</b>
+                        <hr>
+                        <ul>
+                            <li>Languages: <span id="lg"></span></li>
+                            <li>Dob:<span id="db"></span></li>
+                            <li>Hobbies:<span id="hb"></span></li>
+                            <li>strength:<span id="st"></span></li>
+                            <li>weekness:<span id="wk"></span></li>
+
+                        </ul>
+
+                        <Center> <button onclick="print()" id="b2">Print </button> </Center>
+                    </div> <!-- bottom div end-->
+
+
+
+
+                    <script>
+
+                        function show1() {
+
+                            var name = document.getElementById('i1').value;
+                            document.getElementById('nm').innerHTML = name;
+
+
+                            var mobile = document.getElementById('i2').value;
+                            document.getElementById('mb').innerHTML = mobile;
+
+
+
+                            var email = document.getElementById('i3').value;
+                            document.getElementById('em').innerHTML = email;
+
+
+                            var dob = document.getElementById('i4').value;
+                            document.getElementById('db').innerHTML = dob;
+
+
+                            var strength = document.getElementById('i5').value;
+                            document.getElementById('st').innerHTML = strength;
+
+
+                            var weekness = document.getElementById('i6').value;
+                            document.getElementById('wk').innerHTML = weekness;
+
+
+                            var hobbies = document.getElementById('i7').value;
+                            document.getElementById('hb').innerHTML = hobbies;
+
+                            var address = document.getElementById('i8').value;
+                            document.getElementById('add').innerHTML = address;
+
+                            var hsc = document.getElementById('i9').value;
+                            document.getElementById('hs').innerHTML = hsc;
+
+                            var ssc = document.getElementById('i10').value;
+                            document.getElementById('ss').innerHTML = ssc;
+
+                            var ug = document.getElementById('i11').value;
+                            document.getElementById('u').innerHTML = ug;
+
+                            var pg = document.getElementById('i12').value;
+                            document.getElementById('p').innerHTML = pg;
+
+                            var langauges = document.getElementById('i13').value;
+                            document.getElementById('lg').innerHTML = langauges;
+
+                            document.getElementById('frm').style.display = "none";
+                            document.getElementById('b1').style.display = "none";
+                            document.getElementById('im').style.display = "none";
+                            document.getElementById('des').style.display = "none";
+
+
+                            document.getElementById('b2').style.display = "block";
+
+                            document.getElementById('bottom').style.display = "block";
+
+
+                        }
+
+                        function show(n) {
+
+
+                            switch (n) {
+
+                                case 1:
+
+                                    document.getElementById('hsc').style.display = "block";
+                                    document.getElementById('ssc').style.display = "none";
+                                    document.getElementById('ug').style.display = "none";
+                                    document.getElementById('pg').style.display = "none";
+                                    break;
+
+
+                                case 2:
+
+                                    document.getElementById('hsc').style.display = "block";
+                                    document.getElementById('ssc').style.display = "block";
+                                    document.getElementById('ug').style.display = "none";
+                                    document.getElementById('pg').style.display = "none";
+                                    break;
+
+
+                                case 3:
+
+                                    document.getElementById('hsc').style.display = "block";
+                                    document.getElementById('ssc').style.display = "block";
+                                    document.getElementById('ug').style.display = "block";
+                                    document.getElementById('pg').style.display = "none";
+                                    break;
+
+                                case 4:
+
+                                    document.getElementById('hsc').style.display = "block";
+                                    document.getElementById('ssc').style.display = "block";
+                                    document.getElementById('ug').style.display = "block";
+                                    document.getElementById('pg').style.display = "block";
+                                    break;
+
+                                case 5:
+
+                                    document.getElementById('hsc').style.display = "none";
+                                    document.getElementById('ssc').style.display = "none";
+                                    document.getElementById('ug').style.display = "none";
+                                    document.getElementById('pg').style.display = "none";
+                                    break;
+
+                            }
+
+                        }
+                    </script>
+
+</body>
+
+</html>
